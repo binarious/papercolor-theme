@@ -1265,6 +1265,9 @@ fun! s:apply_syntax_highlightings()
     hi! link DiagnosticUnderlineInfo LspDiagnosticsUnderlineInformation
     hi! link DiagnosticUnderlineHint LspDiagnosticsUnderlineHint
 
+    exec 'hi FloatBorder' . s:bg_background
+    exec 'hi NormalFloat' . s:bg_background
+
   endif
 
   " Extension {{{
